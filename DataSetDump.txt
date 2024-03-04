@@ -56,28 +56,6 @@ INSERT INTO EnergyConsumption (RecordID, Sector, Region, Month, Year, EnergySour
 (5, 'Commercial', 'North', 'March', 2024, 'Wind', 320000);
 
 
--- Create the Appointments table
-CREATE TABLE Appointments (
-    patient_name VARCHAR(255),
-    age INT,
-    gender VARCHAR(10),
-    appointment_date DATE,
-    appointment_time TIME,
-    doctor_name VARCHAR(255),
-    specialization VARCHAR(255),
-    department VARCHAR(255)
-);
-
-
--- Insert data into the Appointments table
-INSERT INTO Appointments (patient_name, age, gender, appointment_date, appointment_time, doctor_name, specialization, department) VALUES
-('John Doe', 35, 'Male', '2024-03-05', '09:00:00', 'Dr. Smith', 'Cardiology', 'Internal Medicine'),
-('Jane Smith', 45, 'Female', '2024-03-10', '10:30:00', 'Dr. Johnson', 'Orthopedics', 'Surgery'),
-('Michael Johnson', 28, 'Male', '2024-03-15', '14:00:00', 'Dr. Williams', 'Oncology', 'Internal Medicine'),
-('Emily Davis', 50, 'Female', '2024-03-20', '11:00:00', 'Dr. Brown', 'Pediatrics', 'Pediatrics'),
-('Alex Green', 38, 'Male', '2024-03-25', '10:00:00', 'Dr. Johnson', 'Orthopedics', 'Surgery'),
-('Samantha Ray', 32, 'Female', '2024-03-30', '15:30:00', 'Dr. Smith', 'Cardiology', 'Internal Medicine');
-
 -- Create the InsurancePolicies table
 CREATE TABLE InsurancePolicies (
     PolicyID INT PRIMARY KEY,
